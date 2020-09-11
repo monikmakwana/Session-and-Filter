@@ -1,0 +1,25 @@
+<web-app>
+	<servlet>
+		<servlet-name>servlet</servlet-name>
+		<servlet-class>Servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>servlet</servlet-name>
+		<url-pattern>/Servlet</url-pattern>
+	</servlet-mapping>
+	
+	<filter>
+		<filter-name>Filter1</filter-name>
+		<filter-class>FilterLogs</filter-class>
+	</filter>
+	
+	<filter-mapping>
+		<filter-name>Filter1</filter-name>
+		<url-pattern>/Servlet</url-pattern>
+	</filter-mapping>
+	
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+	
+</web-app>

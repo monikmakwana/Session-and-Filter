@@ -1,0 +1,34 @@
+<web-app>
+
+	<servlet>
+		<servlet-name>servlet</servlet-name>
+		<servlet-class>ItemList</servlet-class>
+	</servlet>
+		<servlet>
+			<servlet-name>servlet1</servlet-name>
+			<servlet-class>DisplayItem</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>servlet2</servlet-name>
+		<servlet-class>Add_Or_Remove</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>servlet</servlet-name>
+		<url-pattern>/ItemList</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>servlet1</servlet-name>
+		<url-pattern>/DisplayItem</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>servlet2</servlet-name>
+		<url-pattern>/Add_Or_Remove</url-pattern>
+	</servlet-mapping>
+	 <listener>
+		<listener-class>SessionListener</listener-class>
+	</listener>
+	<welcome-file-list>
+		<welcome-file>ItemList</welcome-file>
+	</welcome-file-list>
+	
+</web-app>
