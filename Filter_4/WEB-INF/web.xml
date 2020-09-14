@@ -1,0 +1,17 @@
+<web-app>
+
+<servlet>
+<servlet-name>LastVisit</servlet-name>
+<servlet-class>LastVisit</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>LastVisit</servlet-name>
+<url-pattern>/LastVisit</url-pattern>
+</servlet-mapping>
+
+<welcome-file-list>
+	<welcome-file>index.html</welcome-file>
+</welcome-file-list>
+
+</web-app>
